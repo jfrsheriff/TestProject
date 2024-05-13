@@ -13,6 +13,7 @@
 		12D1D9472BF1FF4E00EAED08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12D1D9452BF1FF4E00EAED08 /* Main.storyboard */; };
 		12D1D9492BF1FF5000EAED08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12D1D9482BF1FF5000EAED08 /* Assets.xcassets */; };
 		12D1D94C2BF1FF5000EAED08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12D1D94A2BF1FF5000EAED08 /* LaunchScreen.storyboard */; };
+		12D1D9552BF202BC00EAED08 /* MyCutomPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 12D1D9542BF202BC00EAED08 /* MyCutomPackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12D1D9552BF202BC00EAED08 /* MyCutomPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = TestProject;
+			packageProductDependencies = (
+				12D1D9542BF202BC00EAED08 /* MyCutomPackage */,
+			);
 			productName = TestProject;
 			productReference = 12D1D93C2BF1FF4E00EAED08 /* TestProject.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 12D1D9332BF1FF4E00EAED08;
+			packageReferences = (
+				12D1D9532BF202BC00EAED08 /* XCRemoteSwiftPackageReference "MyCutomPackage" */,
+			);
 			productRefGroup = 12D1D93D2BF1FF4E00EAED08 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -361,6 +369,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		12D1D9532BF202BC00EAED08 /* XCRemoteSwiftPackageReference "MyCutomPackage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jfrsheriff/MyCutomPackage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		12D1D9542BF202BC00EAED08 /* MyCutomPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 12D1D9532BF202BC00EAED08 /* XCRemoteSwiftPackageReference "MyCutomPackage" */;
+			productName = MyCutomPackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 12D1D9342BF1FF4E00EAED08 /* Project object */;
 }

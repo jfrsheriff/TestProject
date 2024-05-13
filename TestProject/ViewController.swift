@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MyCutomPackage
 
 class ViewController: UIViewController {
 
@@ -13,8 +14,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         view.backgroundColor = .orange
+        doSomething()
     }
 
+    private func doSomething(){
+        let res = Calculator.add(num1: 10, num2: 20)
+        print(res)
+        
+    }
 
 }
 

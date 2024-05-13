@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "mycutompackage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jfrsheriff/MyCutomPackage.git",
+      "state" : {
+        "revision" : "43ecf576fdc3c8ca4b3376bc9957c3b7e173f3e2",
+        "version" : "0.1.0"
+      }
+    }
+  ],
+  "version" : 2
+}
